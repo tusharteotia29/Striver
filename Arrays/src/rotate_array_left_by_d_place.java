@@ -7,33 +7,33 @@ public class rotate_array_left_by_d_place {
 
     // using for loop approach
 
-    public static ArrayList<Integer> rotateArray(ArrayList<Integer> nums, int k) {
-        // Write your code here.
+    // public static ArrayList<Integer> rotateArray(ArrayList<Integer> nums, int k) {
+    //     // Write your code here.
 
-        int n=nums.size();
-        k=k%n;
+    //     int n=nums.size();
+    //     k=k%n;
 
-        ArrayList<Integer> temp=new ArrayList<>(k);
+    //     ArrayList<Integer> temp=new ArrayList<>(k);
 
-        // inserting in temp
-        for(int i=0;i<k;i++){
-            temp.add(nums.get(i));
-        } 
+    //     // inserting in temp
+    //     for(int i=0;i<k;i++){
+    //         temp.add(nums.get(i));
+    //     } 
 
-        // Shifting
-        for(int i=k; i<n;i++){
-            nums.set(i-k,nums.get(i));
-        }
+    //     // Shifting
+    //     for(int i=k; i<n;i++){
+    //         nums.set(i-k,nums.get(i));
+    //     }
 
-        // pushback in temp
-        for(int i=n-k;i<n;i++){
-            nums.set(i,temp.get(i-(n-k)));
+    //     // pushback in temp
+    //     for(int i=n-k;i<n;i++){
+    //         nums.set(i,temp.get(i-(n-k)));
 
-        }
+    //     }
 
-        return nums;
+    //     return nums;
 
-    }
+    // }
 
     
 
